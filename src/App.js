@@ -5,7 +5,7 @@ import Screen from "./Screen";
 
 function App() {
     return (
-        <Lang defaultLang="en" traslations={translations}>
+        <Lang defaultLang="en" translations={translations}>
             <Screen />
         </Lang>
     );

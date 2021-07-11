@@ -1,8 +1,13 @@
 import React from "react";
+import { useT, useSetLang } from "./context";
 
-export default () => (
-    <>
-        <h1>Hello!</h1>
-        <button>Translate</button>
-    </>
-)
+export default () => {
+    const setLang = useSetLang();
+    const t = useT();
+    return (
+      <>
+        <h1>{t("Hello!")}</h1>
+        <button onClick={() => setLang("es")}>{t("Translate")}</button>
+    </>  
+    )
+}
