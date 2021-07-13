@@ -17,8 +17,11 @@ export default () => {
         setNewToDo(value);
     }
     return(
-        <form onSubmit={onSubmit}>
-            <input value={newToDo} type="text" placeholder="Write to dos" onChange={onChange} />
-        </form>
+        <>
+            <h1>Add To Dos</h1>
+            <form onSubmit={onSubmit}>
+                <input value={newToDo} type="text" placeholder="Write to dos" onChange={onChange} />
+            </form>
+        </>
     )
 };

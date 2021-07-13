@@ -9,7 +9,6 @@ function App() {
    
     return (
         <>
-            <h1>Add To Dos</h1>
             <Add />
             <List name={"To Dos"}>
                 {toDos.map((toDo) => (
